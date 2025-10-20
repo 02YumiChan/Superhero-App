@@ -35,64 +35,21 @@ namespace WindowsFormsApp1
 
         private void button8_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
                 // Validating the required fields //
                 if (string.IsNullOrWhiteSpace(btnSaveHero.Text))
                     string.IsNullOrWhiteSpace(txtName.Text);
                 string.IsNullOrWhiteSpace(txtAge.Text);
                 string.IsNullOrWhiteSpace(txtSuperpower.Text);
                     string.IsNullOrWhiteSpace(txtExamScore.Text);
-                zq
+           
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            }
-            catch 
-            { 
-                
-            }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Form1 dashboard = new Form1();
+            dashboard.Show();
+            this.Hide();
         }
     }
 }

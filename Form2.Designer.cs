@@ -153,6 +153,7 @@
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "Back to Main Menu";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel2
             // 

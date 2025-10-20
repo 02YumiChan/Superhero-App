@@ -20,6 +20,9 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Add Hero form will open here.");
+            Form2 addHeroForm = new Form2();
+            addHeroForm.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
