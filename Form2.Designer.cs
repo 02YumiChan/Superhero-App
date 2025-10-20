@@ -38,14 +38,14 @@
             this.button7 = new System.Windows.Forms.Button();
             this.btnSaveHero = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.txtExamScore = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.HeroID = new System.Windows.Forms.TextBox();
+            this.HeroName = new System.Windows.Forms.TextBox();
+            this.HeroAge = new System.Windows.Forms.TextBox();
+            this.HeroPowers = new System.Windows.Forms.TextBox();
+            this.ExamScore = new System.Windows.Forms.TextBox();
+            this.HeroRank = new System.Windows.Forms.TextBox();
+            this.ThreatLevel = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@
             this.txtHeroID.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHeroID.Location = new System.Drawing.Point(11, 63);
             this.txtHeroID.Name = "txtHeroID";
-            this.txtHeroID.Size = new System.Drawing.Size(66, 24);
+            this.txtHeroID.Size = new System.Drawing.Size(148, 24);
             this.txtHeroID.TabIndex = 1;
             this.txtHeroID.Text = "Hero ID:";
             this.txtHeroID.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@
             this.txtName.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(11, 102);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(66, 24);
+            this.txtName.Size = new System.Drawing.Size(148, 24);
             this.txtName.TabIndex = 2;
             this.txtName.Text = "Name:";
             this.txtName.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.txtAge.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.Location = new System.Drawing.Point(11, 145);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(66, 24);
+            this.txtAge.Size = new System.Drawing.Size(148, 24);
             this.txtAge.TabIndex = 3;
             this.txtAge.Text = "Age:";
             this.txtAge.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             this.txtSuperpower.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSuperpower.Location = new System.Drawing.Point(11, 184);
             this.txtSuperpower.Name = "txtSuperpower";
-            this.txtSuperpower.Size = new System.Drawing.Size(112, 24);
+            this.txtSuperpower.Size = new System.Drawing.Size(148, 24);
             this.txtSuperpower.TabIndex = 4;
             this.txtSuperpower.Text = "Superpower:";
             this.txtSuperpower.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@
             this.txtRank.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRank.Location = new System.Drawing.Point(11, 279);
             this.txtRank.Name = "txtRank";
-            this.txtRank.Size = new System.Drawing.Size(66, 24);
+            this.txtRank.Size = new System.Drawing.Size(148, 24);
             this.txtRank.TabIndex = 6;
             this.txtRank.Text = "Rank:";
             this.txtRank.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(11, 322);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(112, 24);
+            this.button7.Size = new System.Drawing.Size(148, 24);
             this.button7.TabIndex = 7;
             this.button7.Text = "Threat Level:";
             this.button7.UseVisualStyleBackColor = true;
@@ -155,34 +155,6 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(109, 63);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 24);
-            this.panel2.TabIndex = 10;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(109, 102);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(510, 24);
-            this.panel3.TabIndex = 11;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(109, 145);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(510, 24);
-            this.panel4.TabIndex = 12;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(159, 184);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(460, 24);
-            this.panel5.TabIndex = 13;
-            // 
             // txtExamScore
             // 
             this.txtExamScore.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,39 +165,74 @@
             this.txtExamScore.Text = "Exam Score (0-100):";
             this.txtExamScore.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // HeroID
             // 
-            this.panel6.Location = new System.Drawing.Point(189, 234);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(430, 24);
-            this.panel6.TabIndex = 14;
+            this.HeroID.Location = new System.Drawing.Point(195, 64);
+            this.HeroID.Name = "HeroID";
+            this.HeroID.Size = new System.Drawing.Size(467, 25);
+            this.HeroID.TabIndex = 17;
+            this.HeroID.Text = "Enter Hero ID";
             // 
-            // panel7
+            // HeroName
             // 
-            this.panel7.Location = new System.Drawing.Point(109, 279);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(510, 24);
-            this.panel7.TabIndex = 15;
+            this.HeroName.Location = new System.Drawing.Point(195, 103);
+            this.HeroName.Name = "HeroName";
+            this.HeroName.Size = new System.Drawing.Size(467, 25);
+            this.HeroName.TabIndex = 18;
+            this.HeroName.Text = "Enter Hero name";
             // 
-            // panel8
+            // HeroAge
             // 
-            this.panel8.Location = new System.Drawing.Point(159, 322);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(460, 24);
-            this.panel8.TabIndex = 16;
+            this.HeroAge.Location = new System.Drawing.Point(195, 144);
+            this.HeroAge.Name = "HeroAge";
+            this.HeroAge.Size = new System.Drawing.Size(467, 25);
+            this.HeroAge.TabIndex = 19;
+            this.HeroAge.Text = "Enter Hero Age";
+            // 
+            // HeroPowers
+            // 
+            this.HeroPowers.Location = new System.Drawing.Point(195, 185);
+            this.HeroPowers.Name = "HeroPowers";
+            this.HeroPowers.Size = new System.Drawing.Size(467, 25);
+            this.HeroPowers.TabIndex = 20;
+            this.HeroPowers.Text = "Enter Hero Super Powers";
+            // 
+            // ExamScore
+            // 
+            this.ExamScore.Location = new System.Drawing.Point(195, 233);
+            this.ExamScore.Name = "ExamScore";
+            this.ExamScore.Size = new System.Drawing.Size(467, 25);
+            this.ExamScore.TabIndex = 21;
+            this.ExamScore.Text = "Enter Exam Score";
+            // 
+            // HeroRank
+            // 
+            this.HeroRank.Location = new System.Drawing.Point(195, 280);
+            this.HeroRank.Name = "HeroRank";
+            this.HeroRank.Size = new System.Drawing.Size(467, 25);
+            this.HeroRank.TabIndex = 22;
+            this.HeroRank.Text = "Enter Hero Rand";
+            // 
+            // ThreatLevel
+            // 
+            this.ThreatLevel.Location = new System.Drawing.Point(195, 321);
+            this.ThreatLevel.Name = "ThreatLevel";
+            this.ThreatLevel.Size = new System.Drawing.Size(467, 25);
+            this.ThreatLevel.TabIndex = 23;
+            this.ThreatLevel.Text = "Enter Hero Threat level";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 478);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.ThreatLevel);
+            this.Controls.Add(this.HeroRank);
+            this.Controls.Add(this.ExamScore);
+            this.Controls.Add(this.HeroPowers);
+            this.Controls.Add(this.HeroAge);
+            this.Controls.Add(this.HeroName);
+            this.Controls.Add(this.HeroID);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSaveHero);
             this.Controls.Add(this.button7);
@@ -243,6 +250,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -258,13 +266,13 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnSaveHero;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button txtExamScore;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox HeroID;
+        private System.Windows.Forms.TextBox HeroName;
+        private System.Windows.Forms.TextBox HeroAge;
+        private System.Windows.Forms.TextBox HeroPowers;
+        private System.Windows.Forms.TextBox ExamScore;
+        private System.Windows.Forms.TextBox HeroRank;
+        private System.Windows.Forms.TextBox ThreatLevel;
     }
 }
