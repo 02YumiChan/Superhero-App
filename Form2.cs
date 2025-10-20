@@ -46,13 +46,19 @@ namespace WindowsFormsApp1
                     using (StreamWriter sw = new StreamWriter(file))
                     {
                         // Write headers as first line
-                        sw.WriteLine("Hero ID,Name,Age,Superpower,ExamScore,Rank,ThreatLevel");
+                        sw.WriteLine($"{HeroID.Text},{HeroName.Text},{HeroAge.Text},{HeroPowers.Text},{ExamScore.Text},{HeroRank.Text},{ThreatLevel.Text}");
                     }
                     MessageBox.Show("File created successfully!");
                 }
                 else
                 {
-                    MessageBox.Show("File already exists.");
+                    using (StreamWriter sw = new StreamWriter(file))
+                    {
+                        
+                        sw.WriteLine("******************************************************************************************");
+                        sw.WriteLine($"{HeroID.Text},{HeroName.Text},{HeroAge.Text},{HeroPowers.Text},{ExamScore.Text},{HeroRank.Text},{ThreatLevel.Text}");
+                    }
+                    MessageBox.Show("Hero added successfully");
                 }
             }
             catch (Exception ex)
