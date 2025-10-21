@@ -19,6 +19,32 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            filePath = "C:/Users/wille/source/repos/Superhero-App/textfile folder/Superheros.txt";
+            // Load data from file into DataGridView
+            if (File.Exists(filePath))
+            {
+                var lines = File.ReadAllLines(filePath);
+                var dataTable = new DataTable();
+                // Assuming the first line contains headers
+                var headers = lines[0].Split(',');
+                foreach (var header in headers)
+                {
+                    dataTable.Columns.Add(header);
+                }
+                // Add remaining lines as rows
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    if (!string.IsNullOrWhiteSpace(lines[i]) && !lines[i].StartsWith("***"))
+                    {
+                        var rowValues = lines[i].Split(',');
+                        dataTable.Rows.Add(rowValues);
+                    }
+                }
+                dataGridView1.DataSource = dataTable;
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -43,10 +69,7 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {
