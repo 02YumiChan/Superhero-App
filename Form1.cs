@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        string filePath;
+        string filePath = "C:/Users/wille/source/repos/Superhero-App/textfile folder/Superheros.txt";
         
         public Form1()
         {
@@ -61,7 +61,8 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Report generation feature coming soon");
+            Report reportForm = new Report();
+            reportForm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
