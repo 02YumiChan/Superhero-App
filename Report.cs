@@ -17,14 +17,16 @@ namespace WindowsFormsApp1
         public Report()
         {
             InitializeComponent();
+            LoadHeroes();
         }
 
         private void Report_Load(object sender, EventArgs e)
         {
-
+            LoadHeroes();
         }
         private void LoadHeroes()
         {
+            heroesFile = "C:\\Users\\wille\\source\\repos\\Superhero-App\\textfile folder\\Superheros.txt";
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
 
